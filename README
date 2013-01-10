@@ -1,0 +1,23 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4391
+
+Think of sensible.vim as one step above 'nocompatible' mode: a universal set of defaults that (hopefully) everyone can agree on.
+
+* If you're new to Vim, you can install this as a starting point, rather than copying some random vimrc you found.
+* If you're pair programming and you can't agree on whose vimrc to use, this can be your neutral territory.
+* If you're administrating a server with an account that's not exclusively yours, you can `scp` this up to make things a bit more tolerable.
+* If you're troubleshooting a plugin and need to rule out interference from your vimrc, having this installed will ensure you still have some basic amenities.
+
+## Features
+
+See the source for the authoritative list of features.  (Don't worry, it's mostly :set calls.)  Here's a taste:
+
+* 'backspace': Backspace through anything in insert mode.
+* 'incsearch': Start searching before pressing enter.
+* 'listchars': Makes :set list (visible whitespace) prettier.
+* 'scrolloff': Always show at least one line above/below the cursor.
+* 'directory': Dump swap files under ~/.cache/vim/swap (only if that directory already exists).  Also 'backupdir' and 'undodir'.  Try `mkdir -p ~/.cache/vim/{swap,backup,undo}`.
+* nmap Y y$: Make Y behave like C and D.
+* runtime! macros/matchit.vim: Load the version of matchit.vim that ships with Vim.
+
+
+https://github.com/tpope/vim-sensible
